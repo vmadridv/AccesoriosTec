@@ -1,0 +1,14 @@
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\bin\Debug\Accesorios.Entities.dll.config
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\bin\Debug\Accesorios.Entities.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\bin\Debug\Accesorios.Entities.pdb
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\bin\Debug\EntityFramework.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\bin\Debug\EntityFramework.xml
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\obj\Debug\Accesorios.Entities.csproj.AssemblyReference.cache
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\obj\Debug\Accesorios.Entities.csproj.CoreCompileInputs.cache
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\obj\Debug\Accesorios.Entities.csproj.CopyComplete
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\obj\Debug\Accesorios.Entities.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\obj\Debug\Accesorios.Entities.pdb
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\obj\Debug\Accesorios.Entities.Migrations.inicioAccesoriosE.resources
+C:\Users\M\Source\Repos\Accesorios\Accesorios.Entities\obj\Debug\Accesorios.Entities.csproj.GenerateResource.cache
