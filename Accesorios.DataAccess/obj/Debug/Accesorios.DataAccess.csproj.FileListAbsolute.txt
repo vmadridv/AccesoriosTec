@@ -1,0 +1,15 @@
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\Accesorios.DataAccess.dll.config
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\Accesorios.DataAccess.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\Accesorios.DataAccess.pdb
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\Accesorios.Entities.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\Accesorios.Entities.pdb
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\Accesorios.Entities.dll.config
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\obj\Debug\Accesorios.DataAccess.csproj.AssemblyReference.cache
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\obj\Debug\Accesorios.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\obj\Debug\Accesorios.DataAccess.csproj.CopyComplete
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\obj\Debug\Accesorios.DataAccess.dll
+C:\Users\M\Source\Repos\Accesorios\Accesorios.DataAccess\obj\Debug\Accesorios.DataAccess.pdb

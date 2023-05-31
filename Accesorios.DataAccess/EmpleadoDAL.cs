@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace Accesorios.DataAccess
 {
-    public class EmpleadoDAL
-    {
+    
+    
         public class EmpleadoDAL
         {
             private static EmpleadoDAL _instance;
@@ -105,5 +105,7 @@ namespace Accesorios.DataAccess
                 }
 
             }
+
         }
+    
 }
