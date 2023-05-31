@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accesorios.DataAccess", "Ac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accesorios.BusinessLogic", "Accesorios.BusinessLogic\Accesorios.BusinessLogic.csproj", "{ED265875-1CF7-4127-AB6C-8F7BDBA23A57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accesorios.View", "Accesorios.View\Accesorios.View.csproj", "{C6DE4645-B9F8-493B-A326-5104714FDF3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ED265875-1CF7-4127-AB6C-8F7BDBA23A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED265875-1CF7-4127-AB6C-8F7BDBA23A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED265875-1CF7-4127-AB6C-8F7BDBA23A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DE4645-B9F8-493B-A326-5104714FDF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DE4645-B9F8-493B-A326-5104714FDF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DE4645-B9F8-493B-A326-5104714FDF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DE4645-B9F8-493B-A326-5104714FDF3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

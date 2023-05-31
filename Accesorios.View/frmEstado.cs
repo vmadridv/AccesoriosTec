@@ -13,58 +13,33 @@ using MetroFramework.Forms;
 
 namespace Accesorios.View
 {
-    public partial class frmAdminCategoria : MetroForm
+    public partial class frmEstado : MetroForm
     {
-        private List<Categoria> _listado;
-        public frmAdminCategoria()
+        private List<Estado> _listado;
+        public frmEstado()
         {
             InitializeComponent();
         }
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void frmEstado_Load(object sender, EventArgs e)
         {
             UpdateGrid();
         }
         private void UpdateGrid()
         {
-            _listado = CategoriaBL.Instance.SellecALL();
+            _listado = EstadoBL.Instance.SellecALL();
             var query = from x in _listado
                         select new
                         {
-                            Id = x.CategoriaId,
-                            Nombre = x.Nombre,
-                            Estado = x.Estado.Nombre
+                            Id = x.EstadoId,
+                            Nombre = x.Nombre
                         };
             metroGrid1.DataSource = query.ToList();
         }
 
-        private void frmAdminCategoria_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTextBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void metroTextBox1_TextChanged(object sender, EventArgs e)
-        {
-            _listado = CategoriaBL.Instance.SellecALL();
-
-            var busqueda = from x in _listado
-                           select new
-                           {
-                               Id = x.CategoriaId,
-                               Nombre = x.Nombre,
-                               Estado = x.Estado.Nombre
-                           };
-            var query = busqueda.Where(x => x.Nombre.ToLower().StartsWith(metroTextBox1.Text.ToLower())).ToList();
-            metroGrid1.DataSource = query;
-        }
-
-
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            frmCategoriaNuevo frm = new frmCategoriaNuevo();
+            frmEstadoNuevo frm = new frmEstadoNuevo();
             frm.ShowDialog();
             UpdateGrid();
         }
@@ -74,23 +49,35 @@ namespace Accesorios.View
             this.Close();
         }
 
+        private void metroTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            _listado = EstadoBL.Instance.SellecALL();
+
+            var busqueda = from x in _listado
+                           select new
+                           {
+                               Id = x.EstadoId,
+                               Nombre = x.Nombre
+                           };
+            var query = busqueda.Where(x => x.Nombre.ToLower().Contains(metroTextBox1.Text.ToLower())).ToList();
+            metroGrid1.DataSource = query;
+        }
+
         private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (metroGrid1.CurrentRow.Cells["Editar"].Selected)
+            if (metroGrid1.Rows[e.RowIndex].Cells["Editar"].Selected)
             {
-                int id = (int)metroGrid1.CurrentRow.Cells[2].Value;
-                string nombre = metroGrid1.CurrentRow.Cells[3].Value.ToString();
-                int estadoId = _listado.FirstOrDefault(x => x.CategoriaId.Equals(id)).EstadoId;
+                int id = int.Parse(metroGrid1.Rows[e.RowIndex].Cells["Id"].Value.ToString());
+                string nombre = metroGrid1.Rows[e.RowIndex].Cells["Nombre"].Value.ToString();
 
-                Categoria entity = new Categoria()
+                Estado entity = new Estado()
                 {
-                    CategoriaId = id,
-                    Nombre = nombre,
-                    EstadoId = estadoId
+                    EstadoId = id,
+                    Nombre = nombre
                 };
 
                 //Editar
-                frmCategoriaNuevo frm = new frmCategoriaNuevo(entity);
+                frmEstadoNuevo frm = new frmEstadoNuevo(entity);
                 frm.ShowDialog();
                 UpdateGrid();
 
@@ -102,7 +89,7 @@ namespace Accesorios.View
                 DialogResult dr = MessageBox.Show("Desea eliminar el registro actual?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
-                    if (CategoriaBL.Instance.Delete(id))
+                    if (EstadoBL.Instance.Delete(id))
                     {
                         MessageBox.Show("Se elimino con exito!", "Confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -110,13 +97,6 @@ namespace Accesorios.View
                 }
                 UpdateGrid();
             }
-
-
-        }
-
-        private void metroTile1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
